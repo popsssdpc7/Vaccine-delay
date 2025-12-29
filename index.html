@@ -2,10 +2,32 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Web App Menu</title>
+    <title>วัคซีนกรณีล่าช้า</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>การให้วัคซีนกรณีล่าช้า</h1>
+    <div class="container">
+        <h2>การรับวัคซีนกรณีล่าช้า</h2>
+
+        <!-- กรอกอายุ -->
+        <div class="form-group">
+            <label>อายุ (เดือน):</label><br>
+            <input type="number" id="ageMonth" min="0" placeholder="ใส่อายุเป็นเดือน">
+        </div>
+
+        <!-- เลือกวัคซีนที่ได้รับแล้ว -->
+        <div class="form-group">
+            <label>วัคซีนที่ได้รับแล้ว:</label>
+            <div class="vaccine-list" id="vaccineChecklist">
+                <!-- Checkbox จะถูกสร้างด้วย JS -->
+            </div>
+        </div>
+
+        <button onclick="analyzeVaccine()">วิเคราะห์</button>
+
+        <div id="result" style="margin-top:20px;"></div>
+    </div>
+
+    <script src="js/vaccine-delay.js"></script>
 </body>
 </html>
