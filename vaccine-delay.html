@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>วัคซีนกรณีล่าช้า</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>การรับวัคซีนกรณีล่าช้า</h2>
+
+    <label>อายุ (เดือน)</label><br>
+    <input type="number" id="ageMonth" min="0"><br><br>
+
+    <label>วัคซีนที่ได้รับแล้ว:</label>
+    <div id="vaccineChecklist"></div><br>
+
+    <button onclick="analyzeVaccine()">วิเคราะห์</button>
+
+    <div id="result" style="margin-top:20px;"></div>
+
+    <script src="js/vaccine-delay.js"></script>
+</body>
+</html>
